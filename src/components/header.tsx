@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <nav className="flex bg-slate-900 p-4 justify-between text-white">
-        {session ? <h1>Hello {session.user?.name}</h1> : <div>Welcome</div>}
+        {session ? <h1>Hello {session.user?.email}</h1> : <div>Welcome</div>}
 
         <div className="flex gap-4">
             <Link href="/">Home</Link>
