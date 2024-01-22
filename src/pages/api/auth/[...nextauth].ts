@@ -12,6 +12,11 @@ export const authOptions: NextAuthOptions = {
         authorization: { params: { scope: process.env.MONOCLOUD_SCOPES } },
         idToken: true,
         checks: ['pkce', 'state'],
+        userinfo: {
+        async request(context) {
+            return await context.client.userinfo(context.tokens.access_token!);
+          },
+        },
         profile(profile) {
           let name: string;
   
