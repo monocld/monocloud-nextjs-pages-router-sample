@@ -1,0 +1,1 @@
+Repository for Sample Next.js Application using the Page Router
