@@ -12,7 +12,7 @@
     "@monocloud/nextjs-auth": "^0.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.7"
+    "next": "14.2.12"
   },
   "devDependencies": {
     "typescript": "^5",
